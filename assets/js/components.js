@@ -20,8 +20,8 @@
     return `
       <div class="container site-nav">
         <a class="branding" href="/">
-          <img src="/assets/img/logo.svg" alt="Logo Assurance" width="32" height="32" />
-          <strong>Assurance</strong>
+          <img src="/assets/img/logo.svg" alt="Logo AtlasAssur" width="32" height="32" />
+          <strong>AtlasAssur</strong>
         </a>
         <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Ouvrir le menu">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -31,7 +31,7 @@
         </nav>
         <div class="nav-cta">
           <a class="btn" href="/devis/">Obtenir un devis</a>
-          <a class="btn secondary" href="/espace-client.html" aria-label="Espace client">Espace client</a>
+          <a class="btn secondary" href="/espace-client.html" aria-label="Espace étudiants">Espace étudiants</a>
         </div>
       </div>`;
   }
@@ -42,8 +42,8 @@
         <div class="footer-grid">
           <div>
             <div class="branding">
-              <img src="/assets/img/logo.svg" alt="Logo Assurance" width="28" height="28" />
-              <strong>Assurance</strong>
+              <img src="/assets/img/logo.svg" alt="Logo AtlasAssur" width="28" height="28" />
+              <strong>AtlasAssur</strong>
             </div>
             <p class="mt-4 text-muted">L'assurance simple et claire pour protéger l'essentiel.</p>
           </div>
@@ -80,7 +80,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <small>© <span id="year"></span> Assurance. Tous droits réservés.</small>
+          <small>© <span id="year"></span> AtlasAssur. Tous droits réservés.</small>
           <small>RCS – Capital social – ORIAS (si courtier).</small>
         </div>
       </div>`;
