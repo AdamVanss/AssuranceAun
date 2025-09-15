@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cookies</title>
+    <meta name="description" content="Gestion des cookies et traceurs. Personnalisez vos préférences.">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <a class="sr-only" href="#contenu">Aller au contenu</a>
+    <header id="site-header"></header>
+    <main id="contenu" class="container">
+      <section>
+        <h1 class="mt-0">Cookies</h1>
+        <p>Ce site utilise des cookies nécessaires au fonctionnement et, avec votre consentement, des cookies de mesure d'audience.</p>
+        <div class="card">
+          <h3 class="mt-0">Vos préférences</h3>
+          <label style="display:flex; align-items:center; gap:8px;">
+            <input type="checkbox" id="consent-analytics">
+            <span>Mesure d'audience (anonyme)</span>
+          </label>
+          <div class="actions"><button class="btn" id="save-cookies">Enregistrer</button></div>
+          <div class="mt-2 text-muted" id="cookies-status"></div>
+        </div>
+      </section>
+    </main>
+    <footer id="site-footer"></footer>
+    <script defer src="/assets/js/components.js"></script>
+    <script>
+      (function(){
+        var KEY='cookieConsent';
+        function read(){ try { return localStorage.getItem(KEY); } catch(e){ return null; } }
+        function save(v){ try { localStorage.setItem(KEY, v); } catch(e){} }
+        var current = read();
+        var analytics = document.getElementById('consent-analytics');
+        var status = document.getElementById('cookies-status');
+        if (current === 'accepted') { analytics.checked = true; status.textContent = 'Mesure d\'audience activée.'; }
+        if (current === 'declined') { analytics.checked = false; status.textContent = 'Mesure d\'audience désactivée.'; }
+        document.getElementById('save-cookies').addEventListener('click', function(){
+          save(analytics.checked ? 'accepted' : 'declined');
+          status.textContent = analytics.checked ? 'Préférence enregistrée : activée.' : 'Préférence enregistrée : désactivée.';
+        });
+      })();
+    </script>
+  </body>
+  </html>
+
+

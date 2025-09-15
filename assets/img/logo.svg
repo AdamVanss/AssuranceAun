@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e6dfd"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="32" cy="32" r="30" fill="url(#g)" opacity="0.12"/>
+    <path d="M32 12c10 0 18 8 18 18 0 14-18 22-18 22S14 44 14 30c0-10 8-18 18-18z" fill="#0e6dfd"/>
+    <path d="M32 18c7.732 0 14 6.268 14 14 0 10.5-14 17-14 17S18 42.5 18 32c0-7.732 6.268-14 14-14z" fill="#fff" opacity="0.9"/>
+    <path d="M24 33l5 5 11-11" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <title>Assurance</title>
+</svg>
+
+
